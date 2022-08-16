@@ -2,7 +2,7 @@
 codenerix-erp
 =========================
 
-Here you can find a Docker container with FULL CODENERIX ERP from `django-codenerix-examples<https://github.com/codenerix/django-codenerix-examples>`_.
+Here you can find a Docker container with FULL CODENERIX ERP from `django-codenerix-examples <https://github.com/codenerix/django-codenerix-examples>`_.
 
 .. image:: https://github.com/codenerix/django-codenerix/raw/master/codenerix/static/codenerix/img/codenerix.png
     :target: https://www.codenerix.com
