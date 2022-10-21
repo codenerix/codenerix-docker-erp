@@ -20,7 +20,11 @@ jobs:
           DOCKER_PASSWORD: ${{secrets.DOCKER_PASSWORD}}
       run: |
         docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
-    - name: Build the Docker image
+    - name: Build the Docker ERP image
       run: docker build . --file docker/django/Dockerfile --tag ${{secrets.DOCKER_USER}}/codenerix-erp
-    - name: Docker Push
+    - name: Build the Docker MySQL image
+      run: docker build . --file docker/mysql/Dockerfile --tag ${{secrets.DOCKER_USER}}/codenerix-erp-mysql
+    - name: Docker Push ERP
       run: docker push ${{secrets.DOCKER_USER}}/codenerix-erp
+    - name: Docker Push MySQL
+      run: docker push ${{secrets.DOCKER_USER}}/codenerix-erp-mysql
