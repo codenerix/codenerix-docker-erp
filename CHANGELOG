@@ -6,9 +6,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.3] - 2022-10-21
+### Changed
+- Set requirements to lastest versions of packages
+
 ## [1.0.2] - 2022-10-21
 ### Changed
-- Set dependency to lastest versions of packages
+- Set requirements to lastest versions of packages
 
 ## [1.0.1] - 2022-08-18
 ### Added
